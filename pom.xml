@@ -16,55 +16,55 @@
     </properties>
 
     <dependencies>
-        <!-- MagicDraw Core Libraries (Local) -->
+        <!-- MagicDraw Core Libraries -->
         <dependency>
             <groupId>com.nomagic</groupId>
             <artifactId>md_api</artifactId>
             <version>2022.2.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/md_api.jar</systemPath>
+            <systemPath>${md.lib.path}/md_api.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.nomagic</groupId>
             <artifactId>md</artifactId>
             <version>2022.2.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/md.jar</systemPath>
+            <systemPath>${md.lib.path}/md.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.nomagic</groupId>
             <artifactId>modeling</artifactId>
             <version>2022.2.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/modeling.jar</systemPath>
+            <systemPath>${md.lib.path}/com.nomagic.magicdraw.modeling-2022.2.0-168-7c289b26.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.nomagic</groupId>
             <artifactId>uml2</artifactId>
             <version>2022.2.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/uml2.jar</systemPath>
+            <systemPath>${md.lib.path}/com.nomagic.magicdraw.uml2-2022.2.0-168-7c289b26.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.nomagic</groupId>
             <artifactId>common</artifactId>
             <version>2022.2.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/common.jar</systemPath>
+            <systemPath>${md.lib.path}/common-2022.2.0-168-7c289b26.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.nomagic</groupId>
             <artifactId>core-diagram</artifactId>
             <version>2022.2.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/core-diagram.jar</systemPath>
+            <systemPath>${md.lib.path}/com.nomagic.magicdraw.core.diagram-2022.2.0-168-7c289b26.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.nomagic</groupId>
             <artifactId>utils</artifactId>
             <version>2022.2.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/utils.jar</systemPath>
+            <systemPath>${md.lib.path}/com.nomagic.utils-2022.2.0-168-7c289b26.jar</systemPath>
         </dependency>
 
         <!-- Dependent Plugins -->
@@ -73,37 +73,37 @@
             <artifactId>dependencymatrix-api</artifactId>
             <version>2022.2.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/dependencymatrix_api.jar</systemPath>
+            <systemPath>${md.path}/plugins/com.nomagic.magicdraw.dependencymatrix/dependencymatrix_api.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.nomagic</groupId>
             <artifactId>dependencymatrix</artifactId>
             <version>2022.2.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/dependencymatrix.jar</systemPath>
+            <systemPath>${md.path}/plugins/com.nomagic.magicdraw.dependencymatrix/dependencymatrix.jar</systemPath>
         </dependency>
 
-        <!-- Third-party Libraries (Local) -->
+        <!-- Third-party Libraries -->
         <dependency>
             <groupId>javax.jmi</groupId>
             <artifactId>jmi</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/jmi.jar</systemPath>
+            <systemPath>${md.lib.path}/javax.jmi-1.0.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.eclipse.emf</groupId>
             <artifactId>org.eclipse.emf.common</artifactId>
             <version>2.40.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/emf-common.jar</systemPath>
+            <systemPath>${md.lib.path}/org.eclipse.emf.common-2.40.0.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.eclipse.emf</groupId>
             <artifactId>org.eclipse.emf.ecore</artifactId>
             <version>2.38.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/emf-ecore.jar</systemPath>
+            <systemPath>${md.lib.path}/org.eclipse.emf.ecore-2.38.0.jar</systemPath>
         </dependency>
     </dependencies>
 
