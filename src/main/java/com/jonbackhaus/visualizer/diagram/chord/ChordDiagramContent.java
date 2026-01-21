@@ -12,7 +12,6 @@ import com.nomagic.magicdraw.uml.BaseElement;
 import com.nomagic.magicdraw.uml.diagrams.NonSymbolDiagramContent;
 import com.nomagic.magicdraw.uml.symbols.DiagramPresentationElement;
 import com.jonbackhaus.visualizer.ui.DiagramConfigPanel;
-import com.jonbackhaus.visualizer.MetacrawlerService;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -20,9 +19,7 @@ import com.google.gson.JsonObject;
 import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -75,7 +72,8 @@ public class ChordDiagramContent implements NonSymbolDiagramContent<JComponent> 
             return;
 
         String elementType = configPanel.getElementType();
-        String criteria = configPanel.getDependencyCriteria();
+        // TODO: Use criteria for relationship filtering via MetacrawlerService
+        // String criteria = configPanel.getDependencyCriteria();
 
         // 1. Collect elements of the specified type in the container
         List<Element> elements = container.getOwnedElement().stream()
