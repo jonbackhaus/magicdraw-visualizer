@@ -105,6 +105,48 @@
             <scope>system</scope>
             <systemPath>${md.lib.path}/org.eclipse.emf.ecore-2.38.0.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>com.teamdev.jxbrowser</groupId>
+            <artifactId>jxbrowser</artifactId>
+            <version>7.30.3</version>
+            <scope>system</scope>
+            <systemPath>${md.lib.path}/jxbrowser-7.30.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.teamdev.jxbrowser</groupId>
+            <artifactId>jxbrowser-swing</artifactId>
+            <version>7.30.3</version>
+            <scope>system</scope>
+            <systemPath>${md.lib.path}/jxbrowser-swing-7.30.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.9.0</version>
+            <scope>system</scope>
+            <systemPath>${md.lib.path}/gson-2.9.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nomagic.magicdraw</groupId>
+            <artifactId>foundation</artifactId>
+            <version>2022.2.0</version>
+            <scope>system</scope>
+            <systemPath>${md.lib.path}/com.dassault_systemes.modeler.foundation-2022.2.0-168-7c289b26.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nomagic.magicdraw</groupId>
+            <artifactId>cmof</artifactId>
+            <version>1.4</version>
+            <scope>system</scope>
+            <systemPath>${md.lib.path}/cmof-1.4.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nomagic.magicdraw</groupId>
+            <artifactId>md-foundation</artifactId>
+            <version>2022.2.0</version>
+            <scope>system</scope>
+            <systemPath>${md.lib.path}/com.nomagic.magicdraw.foundation-2022.2.0-168-7c289b26.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>

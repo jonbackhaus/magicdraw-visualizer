@@ -2,7 +2,7 @@ package com.jonbackhaus.visualizer.ui;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Vector;
+import java.awt.event.ActionListener;
 
 /**
  * Custom UI panel for diagram configuration, adapted from Dependency Matrix UI.
@@ -15,6 +15,7 @@ public class DiagramConfigPanel extends JPanel {
     private JComboBox<String> directionCombo;
     private JCheckBox showElementsCheckbox;
     private JTextField filterField;
+    private JButton refreshButton;
 
     public DiagramConfigPanel() {
         setLayout(new GridBagLayout());
@@ -74,6 +75,14 @@ public class DiagramConfigPanel extends JPanel {
         filterField = new JTextField(20);
         add(filterField, gbc);
 
+        // Refresh Button
+        gbc.gridx = 0;
+        gbc.gridy++;
+        gbc.gridwidth = 2;
+        refreshButton = new JButton("Refresh Diagram");
+        add(refreshButton, gbc);
+        gbc.gridwidth = 1;
+
         // Push everything up
         gbc.gridy++;
         gbc.weighty = 1.0;
@@ -103,5 +112,9 @@ public class DiagramConfigPanel extends JPanel {
 
     public String getFilter() {
         return filterField.getText();
+    }
+
+    public void addRefreshListener(ActionListener listener) {
+        refreshButton.addActionListener(listener);
     }
 }

@@ -49,7 +49,9 @@ public class VisualizerPlugin extends Plugin {
         public void configure(Project project, String diagramType, Collection<?> types) {
             if (ChordDiagramDescriptor.DIAGRAM_ID.equals(diagramType)) {
                 // Allow creation in Packages
-                ((Collection<Class<?>>) types).add(Package.class);
+                @SuppressWarnings("unchecked")
+                Collection<Class<?>> classTypes = (Collection<Class<?>>) types;
+                classTypes.add(Package.class);
             }
         }
     }
